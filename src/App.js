@@ -23,18 +23,19 @@ export default function App() {
     <>
       <nav className="navbar shadow fixed-top navbar-expand-sm navbar-dark bg-primary">
         <div className="container">
-          <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQG4TVYYasY1oA/company-logo_100_100/0/1539053140310?e=1638403200&v=beta&t=flUdfWQYi-u9ua-1cWi1C7XkT-OHzpFeTeYZ5zRXpbE"></img>
+          <img
+            alt="kalvi"
+            src="https://media-exp1.licdn.com/dms/image/C4E0BAQG4TVYYasY1oA/company-logo_100_100/0/1539053140310?e=1638403200&v=beta&t=flUdfWQYi-u9ua-1cWi1C7XkT-OHzpFeTeYZ5zRXpbE"
+          ></img>
           <h2>Kalvi Fun Learning</h2>
         </div>
       </nav>
       <div className="app">
-        {/* HINT: replace "false" with logic to display the 
-      score when the user has answered all the questions */}
         {showScore ? (
           <div className="score-section">
             You scored {score} out of {questions.length}
             <h4>
-              {score == questions.length ? (
+              {score === questions.length ? (
                 <h6>"Wow! You're a Science wiz! Happy to have you here!"</h6>
               ) : (
                 <h6>
